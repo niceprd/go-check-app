@@ -1,14 +1,16 @@
 {
   "name": "go-check-web",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "react-scripts start",
     "start": "node scripts/start.js",
     "build:dev": "node scripts/build-dev.js",
-    "build": "yarn && node scripts/build.js",
+    "build": "node scripts/build.js",
+    "heroku:build": "yarn && node scripts/build-dev.js",
     "test": "node scripts/test.js --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node serve.js"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
