@@ -1,0 +1,151 @@
+@import './color';
+
+button,
+.button {
+  width: auto;
+  min-width: 120px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: block;
+  text-align: center;
+  -webkit-box-shadow: 10px 31px 81px 0 rgba(0, 0, 0, 0.102);
+  box-shadow: 10px 31px 81px 0 rgba(0, 0, 0, 0.102);
+  border: 0;
+  border-radius: 50px;
+  font-family: 'Overpass', sans-serif;
+  color: $darker-brown;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  outline: none;
+  overflow: hidden;
+}
+
+.button--alt {
+  background-image: none;
+  background-color: #383435;
+  font-family: 'Overpass', sans-serif;
+  color: $white;
+}
+
+.button--alt:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+}
+
+.button-disable {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.button-group {
+  width: 100%;
+  max-width: 18rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .button-placeholder {
+    height: 2rem;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-placeholder {
+    height: 4rem;
+    margin: 1.75rem auto;
+  }
+}
+
+.button__small,
+.button__small:hover {
+  color: $dark-brown;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .button__small {
+    position: relative;
+    left: -5rem;
+    font-size: 1.5rem;
+    width: 9.5rem;
+    height: 3rem;
+    margin: 0.5rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .button__small {
+    width: 14.5rem;
+    height: 4rem;
+    font-size: 2.1rem;
+    margin: 1.75rem auto;
+    text-align: center;
+  }
+}
+
+.button__register,
+.button__register:hover {
+  color: $dark-brown;
+  display: flex;
+  border-radius: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .button__register {
+    width: 100%;
+    height: 5.5rem;
+    font-size: 2.55rem;
+    padding: 1.25rem 0rem;
+  }
+}
+
+@media (min-width: 426px) {
+  .button__register {
+    width: 18rem;
+    height: 5.5rem;
+    font-size: 2.7rem;
+    margin: 2rem auto;
+    padding: 1.2rem 0rem;
+    text-align: center;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button-loader {
+  width: 28px;
+  height: 28px;
+  margin: 0 0.5rem;
+  z-index: 10;
+  border: 3px solid rgba(143, 143, 143, 0.506);
+  border-radius: 50%;
+  border-top: 3px solid rgba(255, 255, 255, 0.851);
+  animation: spin 750ms linear infinite;
+}

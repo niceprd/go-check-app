@@ -1,0 +1,30 @@
+@import '../../assets/styles/color.scss';
+
+.navbar-bg {
+  background-image: linear-gradient(to right, $white, $light-blue, $dark-blue2);
+  font-size: 20px;
+  .navbar-nav {
+    flex-direction: column !important;
+    .tel {
+      border: 1px solid $white;
+      .center-div {
+        vertical-align: middle;
+        padding: 5px;
+        .left,
+        .right {
+          vertical-align: middle;
+        }
+      }
+    }
+    .social {
+      margin-left: auto;
+      font-size: 24px;
+      a {
+        padding: 0 8px;
+      }
+    }
+  }
+  .white {
+    color: $white;
+  }
+}

@@ -1,0 +1,60 @@
+.form-multi-step {
+    p {
+        text-align: center;
+    }
+
+    fieldset {
+        margin: 0 auto;
+        max-width: 40rem;
+        min-height: 0;
+        min-width: 0;
+    }
+}
+
+.form__group {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.form__inline {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .form__group {
+        color: rgba(255, 255, 255, 0.5);
+        width: 47%;
+        margin: 0;
+    }
+
+    @media (max-width: 767px) {
+        .form__group {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .form__group+.form__group {
+            padding-left: 0;
+        }
+
+        .form__group+.form__group label {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .form__inline {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,82 @@
+.main {
+  width: 100%;
+  // min-height: 90vh;
+  flex: 1 0 auto;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.main.no-padding {
+  max-width: 100%;
+}
+
+[class*='main--'] {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .description {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+    color: $light-grey;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .description {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .description {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  .agreement {
+    max-width: 19rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    input {
+      width: auto;
+      height: auto;
+    }
+    small,
+    .steps a,
+    a {
+      position: static;
+      padding-left: 0.5rem;
+    }
+    @media (min-width: 1024px) {
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+[class*='icon--']::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  [class*='main--'] .agreement {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+  }
+}
