@@ -389,7 +389,7 @@ export default function landing() {
           <style>
             {`.custom-tag {
                   max-width: 100%;
-                  height: 550px;
+                  height: 650px;
                   width: 70%;
                   box-shadow: 0px 8px 10px #808080;
                 }`}
