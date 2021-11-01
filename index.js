@@ -23,4 +23,4 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 3000
 app.listen(port)
 
-console.log(`GOMO Container listening on ${port}`)
+console.log(`Go-check Container listening on ${port}`)
